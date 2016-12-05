@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.luckykat.icloudentitlements"
+        version="1.0.0">
+
+  <name>iCloud entitlements</name>
+  <author>Hernan Zhou</author>
+
+  <description>
+    This plugin turns on iCloud entitlements.
+  </description>
+
+  <engines>
+    <engine name="cordova" version="&gt;=3.0.0"/>
+  </engines>
+
+  <platform name="ios">
+    <hook type="after_platform_add" src="src/ios/hooks/install_entitlements.js"/>
+  </platform>
+</plugin>
